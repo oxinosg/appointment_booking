@@ -24,7 +24,7 @@ The system is designed to be used from the command line. The user can:
  - Set the from and to date range for the previous commands to use. [default: now to end of the day]
 
 ## TODOs
- - [ ] Set up error system so that error codes will be used instead of strings [anyhow.rs].
+ - [ ] Set up error system so that error codes will be used instead of strings, and disallow unwrap usage (anyhow.rs).
  - [ ] Set up translation system for display names
  - [ ] Better validation for command-line arguments
  - [ ] Improve optimization for long-duration appointments by using historic data
