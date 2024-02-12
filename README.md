@@ -23,6 +23,12 @@ The system is designed to be used from the command line. The user can:
  - Fill random appointments for a given appointment type, up to a given percentage.
  - Set the from and to date range for the previous commands to use. [default: now to end of the day]
 
+## Optimization of appointments
+The system is designed to give priority to long-duration appointments. This is done by using an optimization
+algorithm that tries to maximize the number of long-duration appointments that can be booked.
+When multiple time-slots for an appointment are available for the same 60-minute window, the system will check
+which of those time-slots if used, will allow space for the most long-duration appointments to be booked in the future.
+
 ## TODOs
  - [ ] Set up error system so that error codes will be used instead of strings, and disallow unwrap usage (anyhow.rs).
  - [ ] Set up translation system for display names
