@@ -1,3 +1,6 @@
+//! This module contains the command-line interface (CLI) functions for the
+//! application.
+
 use chrono::{NaiveDateTime, ParseError, Timelike};
 use dialoguer::{theme::ColorfulTheme, Input, Select};
 
