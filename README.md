@@ -14,7 +14,7 @@ The booking system is designed with the following assumptions:
 
 ## Command-Line Interface
 The system is designed to be used from the command line. The user can:
- - Add a new appointment
+ - Add a new appointment. Any time free time slot can be used. not only those provided by the optimized list.
  - See booked appointments
  - List available appointment slots for a given date range, for a given appointment type.
  - List available appointment slots for a given date range, for a given appointment type.
