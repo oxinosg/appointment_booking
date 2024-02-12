@@ -18,6 +18,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "appointment_booking"
+version = "1.0.0"
+dependencies = [
+ "chrono",
+ "dialoguer",
+ "lazy_static",
+ "rand",
+]
+
+[[package]]
 name = "autocfg"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -94,16 +104,6 @@ dependencies = [
  "tempfile",
  "thiserror",
  "zeroize",
-]
-
-[[package]]
-name = "dr_flex"
-version = "1.0.0"
-dependencies = [
- "chrono",
- "dialoguer",
- "lazy_static",
- "rand",
 ]
 
 [[package]]

@@ -2,7 +2,7 @@
 authors = ["Georgios Oxinos"]
 description = "Appointment scheduling optimizer"
 edition = "2021"
-name = "dr_flex"
+name = "appointment_booking"
 version = "1.0.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

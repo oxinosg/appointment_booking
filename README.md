@@ -1,22 +1,33 @@
 # Appointment Booking
 
 ## Description
-For simplicity, assume that the practice is always open from Monday to Friday
-from 8:00 AM to 12:00 PM and from 1:00 PM to 5:00 PM. Below is the
-representation of a practice's appointment calendar. The TODOs would be for
-you to implement, in addition to a command-line interface for using the
-application.
+Appointment booking system. The system is designed to allow patients to book
+appointments with a practice. The practice offers appointments of three different types:
+15 minutes, 30 minutes and 90 minutes.
+The main function of the system is to provide a list of available appointment
+slots for a given date range, while giving priority to long-duration appointments.
 
-The core of the coding challenge is the function free_slots_optimized. This
-function should filter the appointment offerings returned by the free_slots
-function so that, if possible, slots are reserved for long-duration
-appointment types while still allowing patients to book all types of
-appointments as much as possible. It is assumed that it does not matter to a
-patient exactly when within a 60-minute window the appointment is, as long as
-it is within that window.
+The booking system is designed with the following assumptions:
+ - The practice is open from Monday to Friday from 8:00 AM to 12:00 PM and from 1:00 PM to 5:00 PM.
+ - Time slots for appointments are always on the quarter hour (e.g. 8:00, 8:15, 8:30, 8:45, etc.).
+ - Users do not care about the exact time within a 60-minute window, as long as it is within that window.
 
-// TODO set up error system so that error codes will be used instead of strings.
+## Command-Line Interface
+The system is designed to be used from the command line. The user can:
+ - Add a new appointment
+ - See booked appointments
+ - List available appointment slots for a given date range, for a given appointment type.
+ - List available appointment slots for a given date range, for a given appointment type.
+   Optimized to show a maximum of 1 appointment per 60 minutes. This optimizations is used
+   to give as much space as possible to long-duration appointments.
+ - Fill random appointments for a given appointment type, up to a given percentage.
+ - Set the from and to date range for the previous commands to use. [default: now to end of the day]
 
+## TODOs
+ - [ ] Set up error system so that error codes will be used instead of strings [anyhow.rs].
+ - [ ] Set up translation system for display names
+ - [ ] Better validation for command-line arguments
+ - [ ] Improve optimization for long-duration appointments by using historic data
 
 ## Run
 ```bash
